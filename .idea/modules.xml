@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/yx-hq.iml" filepath="$PROJECT_DIR$/.idea/yx-hq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/jbk-compontents.iml" filepath="$PROJECT_DIR$/.idea/jbk-compontents.iml" />
     </modules>
   </component>
 </project>
