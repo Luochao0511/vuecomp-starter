@@ -62,13 +62,17 @@ import {
 defineOptions({
   name: 'LcTable'
 })
-import {AgGridVue} from 'ag-grid-vue3'; // 引入ag-grid-vue组件
+
+const pkg = require('ag-grid-vue3'); // 引入ag-grid-vue组件
+
+const AgGridVue = pkg.AgGridVue;
 import {EXCELSTYLES, GRID_OPTIONS, SIDEBAR_CONFIGURATION} from './agColumns.ts'; // 引入表格配置
 import 'ag-grid-community/styles/ag-grid.css'; // 引入ag-grid样式
 import 'ag-grid-community/styles/ag-theme-material.css'; // 引入主题
 import {LicenseManager} from 'ag-grid-enterprise'; // 引入付费js文件
 import {computed, defineEmits, defineExpose, defineProps, nextTick, onBeforeUnmount, onMounted, ref, watch} from 'vue';
-import {debounce, toDateString} from 'xe-utils';
+
+const {debounce, toDateString} = require('xe-utils');
 
 // 以下代码是破解的api必须要加
 LicenseManager.prototype.validateLicense = () => true;

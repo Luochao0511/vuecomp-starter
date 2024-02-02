@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
-
+import commonjs from '@rollup/plugin-commonjs';//引入commojs
+import requireTransform from 'vite-plugin-require-transform';//引入require
 export default defineConfig({
   build: {
     target: 'modules',
@@ -18,7 +19,7 @@ export default defineConfig({
           dir: '../../dist/es',
           entryFileNames: '[name].js',
           preserveModules: true,
-          preserveModulesRoot: 'src',
+          preserveModulesRoot: 'src'
         },
         {
           exports: 'named',
@@ -26,8 +27,8 @@ export default defineConfig({
           dir: '../../dist/lib',
           entryFileNames: '[name].js',
           preserveModules: true,
-          preserveModulesRoot: 'src',
-        },
+          preserveModulesRoot: 'src'
+        }
         // 开启umd打包模式
         // {
         //   name: 'vuecomp',
@@ -42,9 +43,14 @@ export default defineConfig({
       entry: 'src/index.ts',
       name: 'vuecomp',
       formats: ['es', 'cjs', 'umd']
-    },
+    }
   },
   plugins: [
+    commonjs(),
+    //我的入口文件是ts类型，所以下面必须加上.ts$，否则在main.ts无法使用require
+    requireTransform({
+      fileRegex: /.js$|.vue$|.png$|.ts$|.jpg$/
+    }), //配置require
     vue(),
     dts({
       entryRoot: './src',
