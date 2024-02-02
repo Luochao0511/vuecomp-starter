@@ -12,9 +12,7 @@
   "main": "dist/lib/index.js",
   "module": "dist/es/index.js",
   "types": "dist/lib/index.d.ts",
-  "exports": {
-
-  },
+  "exports": {},
   "scripts": {
     "build": "gulp -f packages/script/build/index.ts",
     "component:create": "esno ./utils/create/index.ts",
@@ -30,24 +28,37 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
     "@types/gulp": "^4.0.16",
     "@types/gulp-autoprefixer": "^0.0.36",
     "@types/gulp-less": "^0.0.35",
     "@types/gulp-sass": "^5.0.3",
     "@types/node": "^20.8.7",
+    "@vueuse/core": "^10.7.2",
+    "ag-grid-community": "^31.0.3",
+    "ag-grid-enterprise": "^31.0.3",
+    "ag-grid-vue3": "^31.0.3",
     "chalk": "^5.3.0",
+    "consola": "^3.2.3",
     "dotenv": "^16.3.1",
+    "element-plus": "^2.5.4",
+    "escape-html": "^1.0.3",
     "esno": "^0.17.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-less": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "less": "^4.2.0",
+    "markdown-it": "^14.0.0",
+    "markdown-it-container": "^4.0.0",
+    "normalize.css": "^8.0.1",
+    "prismjs": "^1.29.0",
     "sass": "^1.69.4",
     "sucrase": "^3.34.0",
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
     "vitepress": "1.0.0-rc.24",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "xe-utils": "^3.5.20"
   }
 }

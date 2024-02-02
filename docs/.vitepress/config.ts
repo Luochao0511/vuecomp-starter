@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { sidebar } from './config/sidebar'
+import {mdPlugin} from './config/plugins.ts'
 
 export default defineConfig({
   title: `vuecomp-starter`,
@@ -8,7 +9,6 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: 'logo.svg' }],
   ],
-
   themeConfig: {
     footer: {
       message: 'Released under the MIT License.',
@@ -38,5 +38,13 @@ export default defineConfig({
       }
     ],
     sidebar,
-  }
+  },
+  markdown: {
+    headers: {
+      level: [0, 0],
+    },
+    // light: #f9fafb, dark: --vp-code-block-bg
+    theme: { light: 'github-light', dark: 'github-dark' },
+    config: (md) => mdPlugin(md),
+  },
 })

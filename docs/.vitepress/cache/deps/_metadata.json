@@ -1,19 +1,77 @@
 {
-  "hash": "68f740f4",
-  "browserHash": "bb99cdf4",
+  "hash": "97426370",
+  "browserHash": "9a5a3da6",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.3.4/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "4f54c9a2",
+      "fileHash": "b8d3b7cd",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@6.5.1/node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "2fbaf0f7",
+      "fileHash": "4b5a15ce",
       "needsInterop": false
+    },
+    "element-plus": {
+      "src": "../../../../node_modules/.pnpm/element-plus@2.5.4_vue@3.3.4/node_modules/element-plus/es/index.mjs",
+      "file": "element-plus.js",
+      "fileHash": "da80814b",
+      "needsInterop": false
+    },
+    "element-plus/es/locale/lang/zh-cn": {
+      "src": "../../../../node_modules/.pnpm/element-plus@2.5.4_vue@3.3.4/node_modules/element-plus/es/locale/lang/zh-cn.mjs",
+      "file": "element-plus_es_locale_lang_zh-cn.js",
+      "fileHash": "fb2bdf55",
+      "needsInterop": false
+    },
+    "@element-plus/icons-vue": {
+      "src": "../../../../node_modules/.pnpm/@element-plus+icons-vue@2.3.1_vue@3.3.4/node_modules/@element-plus/icons-vue/dist/index.js",
+      "file": "@element-plus_icons-vue.js",
+      "fileHash": "dcac70de",
+      "needsInterop": false
+    },
+    "@vueuse/core": {
+      "src": "../../../../node_modules/.pnpm/@vueuse+core@10.7.2_vue@3.3.4/node_modules/@vueuse/core/index.mjs",
+      "file": "@vueuse_core.js",
+      "fileHash": "140ad4a9",
+      "needsInterop": false
+    },
+    "ag-grid-vue3": {
+      "src": "../../../../node_modules/.pnpm/ag-grid-vue3@31.0.3_vue@3.3.4/node_modules/ag-grid-vue3/lib/AgGridVue.js",
+      "file": "ag-grid-vue3.js",
+      "fileHash": "04ca3c6f",
+      "needsInterop": false
+    },
+    "ag-grid-enterprise": {
+      "src": "../../../../node_modules/.pnpm/ag-grid-enterprise@31.0.3/node_modules/ag-grid-enterprise/dist/ag-grid-enterprise.auto.esm.js",
+      "file": "ag-grid-enterprise.js",
+      "fileHash": "5fd9b3df",
+      "needsInterop": false
+    },
+    "xe-utils": {
+      "src": "../../../../node_modules/.pnpm/xe-utils@3.5.20/node_modules/xe-utils/index.js",
+      "file": "xe-utils.js",
+      "fileHash": "62f6dfb0",
+      "needsInterop": true
     }
   },
-  "chunks": {}
+  "chunks": {
+    "chunk-MOTH5JYU": {
+      "file": "chunk-MOTH5JYU.js"
+    },
+    "chunk-JP43PKLV": {
+      "file": "chunk-JP43PKLV.js"
+    },
+    "chunk-XKSR56VD": {
+      "file": "chunk-XKSR56VD.js"
+    },
+    "chunk-QDQ3MPMW": {
+      "file": "chunk-QDQ3MPMW.js"
+    },
+    "chunk-UXIASGQL": {
+      "file": "chunk-UXIASGQL.js"
+    }
+  }
 }
