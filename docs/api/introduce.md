@@ -13,6 +13,6 @@
 * :arrow_right: 传参类型标注，返回值类型标准
 * :arrow_right: 编辑器触摸方法查看用法和例子
 * :arrow_right: form表单正则函数
-* :arrow_right: 良好的示例代码，
+* :arrow_right: 良好的示例代码，11
 
 
