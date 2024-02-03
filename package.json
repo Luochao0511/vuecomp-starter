@@ -61,6 +61,7 @@
     "vite-plugin-require-transform": "^1.0.21",
     "vitepress": "1.0.0-rc.24",
     "vue": "^3.3.4",
+    "vue-class-component": "^7.2.6",
     "xe-utils": "^3.5.20"
   }
 }

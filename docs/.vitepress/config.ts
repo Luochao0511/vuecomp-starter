@@ -39,6 +39,12 @@ export default defineConfig({
     ],
     sidebar,
   },
+  vite: {
+    ssr: {
+      // 列出的是防止被 SSR 外部化依赖项。如果设为 true，将没有依赖被外部化。
+        noExternal: ['ag-grid-vue3'],
+    },
+  },
   markdown: {
     headers: {
       level: [0, 0],
