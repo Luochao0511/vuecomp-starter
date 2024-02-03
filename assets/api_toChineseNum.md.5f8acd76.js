@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.8d891f3a.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"api/toChineseNum.md","filePath":"api/toChineseNum.md"}'),o={name:"api/toChineseNum.md"};function s(n,r,i,c,p,m){return a(),t("div")}const f=e(o,[["render",s]]);export{d as __pageData,f as default};
